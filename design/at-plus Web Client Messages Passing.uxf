@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>234</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+</panel_attributes>
+    <additional_attributes>27;27;27;153;243;153;243;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>828</x>
+      <y>225</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>remote-events
+slave (host)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>630</x>
+      <y>99</y>
+      <w>369</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Tab B
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>387</x>
+      <y>135</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Host A
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>171</y>
+      <w>125</w>
+      <h>233</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+</panel_attributes>
+    <additional_attributes>27;90;27;216;108;216;108;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>207</x>
+      <y>315</y>
+      <w>792</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>localStorage
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>216</x>
+      <y>135</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>@+ A
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>333</x>
+      <y>135</y>
+      <w>203</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+host-ap messages</panel_attributes>
+    <additional_attributes>27;45;126;45;126;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>216</x>
+      <y>477</y>
+      <w>225</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>@+ Server
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>657</x>
+      <y>225</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>remote-events
+slave (ap)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>486</x>
+      <y>27</y>
+      <w>216</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>*@+ Web Client Messages Passing*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>810</x>
+      <y>135</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Host B
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>225</x>
+      <y>207</y>
+      <w>99</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;proxy&gt;&gt;
+remote-events
+master</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>297</x>
+      <y>486</y>
+      <w>44</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+</panel_attributes>
+    <additional_attributes>27;27;27;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>198</x>
+      <y>576</y>
+      <w>243</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Client (Browser) 2
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>234</y>
+      <w>512</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+server messages
+tab-sync messages</panel_attributes>
+    <additional_attributes>27;27;27;153;495;153;495;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>207</x>
+      <y>99</y>
+      <w>369</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Tab A
+fg=gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>414</x>
+      <y>225</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>remote-events
+slave (host)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>189</x>
+      <y>63</y>
+      <w>828</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>Client (Browser) 1
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>558</x>
+      <y>459</y>
+      <w>450</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*Message Type*
+
+1) server messages（有频道划分）
+    to sever: 兴趣点/私聊的创建、更新，用户的状态，好友/关注的请求
+    from server：服务器状态、初始化数据、server中继消息（有频道划分）
+2) tab-sync message: 私聊框状态更新、……
+3）host-ap message: 兴趣点定位请求/回复、等组件内通讯
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>639</x>
+      <y>135</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>@+ B
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>234</y>
+      <w>701</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+</panel_attributes>
+    <additional_attributes>27;27;27;153;684;153;684;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>63</x>
+      <y>207</y>
+      <w>189</w>
+      <h>305</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+to/from Server Messages
+</panel_attributes>
+    <additional_attributes>162;27;99;27;99;288;153;288</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>225</x>
+      <y>162</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>remote-events
+slave (ap)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>693</x>
+      <y>144</y>
+      <w>233</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+host-ap messages</panel_attributes>
+    <additional_attributes>27;81;27;45;216;45;216;81</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>558</x>
+      <y>576</y>
+      <w>441</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>@+应用状态在不同tab、不同时间的访问时同步的问题由SM模块负责。例如：
+工具栏和“热门”、“历史”等位面的状态的同步。
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>120</x>
+      <y>400</y>
+      <w>670</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Both Pages
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>220</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Mask</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>140</x>
+      <y>430</y>
+      <w>250</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Interesting Point Position Calculator
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>510</x>
+      <y>220</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Toolbar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>340</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Interesting Point</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>650</x>
+      <y>340</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Chat</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>490</x>
+      <y>110</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>/Visible Component/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>430</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Interesting Points Manager
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>610</x>
+      <y>430</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Chats Manager
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>640</x>
+      <y>110</y>
+      <w>150</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>/Invisible Component/
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>490</x>
+      <y>470</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>State Manager
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>380</x>
+      <y>170</y>
+      <w>410</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>@+ Page
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>150</x>
+      <y>340</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Bootstraper
+bg=light_gray
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>150</x>
+      <y>280</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Exposed Interesting Point</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>590</x>
+      <y>280</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Interesting Point Drawer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>360</x>
+      <y>70</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>*@+ Web Client Components*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>120</x>
+      <y>170</y>
+      <w>250</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Host Page
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>140</x>
+      <y>470</y>
+      <w>340</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Remote Events
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>620</x>
+      <y>220</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Friends &amp; Users List</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>280</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Interesting Points List
+(Hots, Circle, My Space)</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

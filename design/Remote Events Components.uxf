@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>200</x>
+      <y>190</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+use
+fg=gray</panel_attributes>
+    <additional_attributes>30;50;230;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>300</x>
+      <y>430</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+fg=gray</panel_attributes>
+    <additional_attributes>30;30;30;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>520</x>
+      <y>510</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>localStorage
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>460</x>
+      <y>430</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Local Storage Messaging Adapter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>470</x>
+      <y>220</y>
+      <w>360</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>30;30;30;140;340;140;340;210</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>760</x>
+      <y>510</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>postMessage
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>740</x>
+      <y>430</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Web Messaging Adapter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>540</x>
+      <y>430</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+fg=gray</panel_attributes>
+    <additional_attributes>30;30;30;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>140</x>
+      <y>100</y>
+      <w>720</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+7）callback event handler
+fg=magenta</panel_attributes>
+    <additional_attributes>700;100;700;50;30;50;30;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>520</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+5）on 
+event / message
+fg=magenta</panel_attributes>
+    <additional_attributes>90;100;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>260</x>
+      <y>170</y>
+      <w>670</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>*Remote Events*
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>300</x>
+      <y>220</y>
+      <w>220</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>200;30;200;140;30;140;30;210</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>510</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>socket.io
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>220</y>
+      <w>294</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+use to send and intercept message
+</panel_attributes>
+    <additional_attributes>150;30;150;140;150;210</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>100</x>
+      <y>220</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>@+ Component
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>970</x>
+      <y>220</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;External&gt;&gt;
+EventEmitter
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>220</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Remote Events*
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>740</x>
+      <y>260</y>
+      <w>234</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+6）emit intercepted event
+fg=magenta</panel_attributes>
+    <additional_attributes>120;100;120;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>170</y>
+      <w>194</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+2) register(on) event
+fg=green</panel_attributes>
+    <additional_attributes>50;50;160;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>430</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Socket Adpater</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>270</x>
+      <y>220</y>
+      <w>146</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+3) emit event
+fg=blue</panel_attributes>
+    <additional_attributes>30;50;120;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>500</x>
+      <y>90</y>
+      <w>200</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>*Remote Events Components*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>760</x>
+      <y>220</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;EventEmitter&gt;&gt;
+event-bus</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>780</x>
+      <y>430</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+fg=gray</panel_attributes>
+    <additional_attributes>30;30;30;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>720</x>
+      <y>520</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+ 5）on 
+event / message
+fg=magenta</panel_attributes>
+    <additional_attributes>90;100;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>550</x>
+      <y>190</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+create, use</panel_attributes>
+    <additional_attributes>30;50;210;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>210</x>
+      <y>170</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+1) register(on) event
+fg=green</panel_attributes>
+    <additional_attributes>30;50;180;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>520</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+5）on 
+event / message
+fg=magenta</panel_attributes>
+    <additional_attributes>90;100;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>240</y>
+      <w>198</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+4) dispatch and send
+event / message
+fg=blue</panel_attributes>
+    <additional_attributes>100;30;100;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>860</x>
+      <y>210</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+fg=gray</panel_attributes>
+    <additional_attributes>30;30;110;30</additional_attributes>
+  </element>
+</diagram>
