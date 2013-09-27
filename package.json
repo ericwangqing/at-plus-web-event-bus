@@ -2,7 +2,9 @@
   "name": "at-plus-web-event-bus",
   "version": "0.0.1",
   "description": "@+ web event bus",
-  "dependencies": {},
+  "dependencies": {
+    "eventemitter2": "~0.4.13"
+  },
   "repository": "https://github.com/ericwangqing/at-plus-web-event-bus.git",
   "devDependencies": {
     "should": "~1.2.1",
