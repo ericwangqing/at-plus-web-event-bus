@@ -10,21 +10,24 @@
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   <script>
     require.config({
+      baseUrl: 'bin',
       paths: {
-        mocha:  'node_modules/mocha/mocha',
-        chai:   'node_modules/chai/chai',
-        test:   'bin/test',
-        'event-bus': 'bin/event-bus'
+        mocha:  '../node_modules/mocha/mocha',
+        chai:   '../node_modules/chai/chai',
+        sinon:   '../node_modules/sinon/pkg/sinon-1.7.3',
+        'sinon-chai':   '../node_modules/sinon-chai/lib/sinon-chai',
       }
     });
  
-  require(['require', 'mocha'], function(require) {
-      mocha.setup('bdd');
-      require(['chai', 'test'], function() {
-        //mocha.checkLeaks();
-        mocha.run();
-      });
+  require(['require', 'chai', 'mocha', 'sinon', 'sinon-chai'], function(require, chai, _mocha, _sinon, sinonChai) {
+    chai.use(sinonChai);
+    chai.should();
+    mocha.setup('bdd');
+    require(['test'], function(require) {
+      //mocha.checkLeaks();
+      mocha.run();
     });
+  });
   </script>
 </body>
 </html>
