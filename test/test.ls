@@ -3,7 +3,6 @@ can = it
 page-mock = require 'page-mock'
 io-mock = require 'socket-io-mock'
 
-
 describe '测试host-ap (postMessage)消息', !->
 
   can '在host page和@+ page之间，使用remote-events传递事件', !->
@@ -15,20 +14,36 @@ describe '测试host-ap (postMessage)消息', !->
     callback.should.have.be.called-with data
 
 describe '测试server消息传递正确', !->
-  can 'slave收到master中继的server消息', !->
-    [master, slave] = page-mock.create-master-slave-pair!
-    slave.remote-events.on 'server:test-server-event', callback = sinon.spy!
+  can 'ap收到master中继的server消息', !->
+    [master, ap] = page-mock.create-master-ap-pair!
+    ap.remote-events.on 'server:test-server-event', callback = sinon.spy!
     data = message: "Testing received server event"
     
     io-mock.send-fake-server-message 'test-server-event', data
     callback.should.have.be.called-with data
 
-  can '正确从slave向server发送消息', !->
-    [master, slave] = page-mock.create-master-slave-pair!
+  can '正确从ap向server发送消息', !->
+    [master, ap] = page-mock.create-master-ap-pair!
     io-mock.set-emit-callback callback = sinon.spy!
     data = message: "Testing sent server event"
     
-    slave.remote-events.emit 'server:test-server-event', data
+    ap.remote-events.emit 'server:test-server-event', data
+    callback.should.have.be.called-with 'test-server-event', data
+
+  can 'host收到master、ap中继的server消息', !->
+    [master, host] = page-mock.create-master-host-pair!
+    host.remote-events.on 'server:test-server-event', callback = sinon.spy!
+    data = message: "Testing received server event"
+    
+    io-mock.send-fake-server-message 'test-server-event', data
+    callback.should.have.be.called-with data
+
+  can '正确从host向server发送消息', !->
+    [master, host] = page-mock.create-master-host-pair!
+    io-mock.set-emit-callback callback = sinon.spy!
+    data = message: "Testing sent server event"
+    
+    host.remote-events.emit 'server:test-server-event', data
     callback.should.have.be.called-with 'test-server-event', data
 
 describe '测试tab消息传递正确', !->

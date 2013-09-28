@@ -12,9 +12,7 @@ create-pair-pages =  (a, b) ->
   add-remote-events-pair page-a, page-b
 
 get-type-by-name = (name)->
-  return  'master' if name is 'master'
-  return 'slave-host' if name is 'host'
-  'salve-ap'
+  name
 
 create-mock-web-page = (name)->
   mock-web-page = title: name
@@ -70,9 +68,13 @@ exports =
   create-host-ap-pair: ->
     create-pair-pages('host', 'ap')
 
-  create-master-slave-pair: ->
-    create-pair-pages('master', 'slave')
+  create-master-ap-pair: ->
+    create-pair-pages('master', 'ap')
 
+  create-master-host-pair: ->
+    [host, ap1] = create-pair-pages 'host', 'ap' 
+    [master, ap2] = create-pair-pages 'master', 'ap' 
+    [master, host]
 
   get-fake-event-bus: ->
     fake-even-bus

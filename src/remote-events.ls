@@ -5,7 +5,7 @@ define ['require', 'remote-events-dispatcher', '../node_modules/eventemitter2/li
 
 convert-communications = ->
   # 详细设计见：http://my.ss.sysu.edu.cn/wiki/pages/viewpage.action?pageId=223215619
-  if @type is not 'slave-host' # host很多不是HTML5，不能使用localStorage
+  if @type is not 'host' # host很多不是HTML5，不能使用localStorage
     @local-storage-messenger = local-storage-messaging-adapter.create-messenger-and-redirect-on-message @this-page, @
   if @type is 'master' # master和server通讯，但是不和host通讯，不用postMessage
     socket-adapter.redirect-socket-on @socket, @ 
@@ -18,7 +18,7 @@ exports =
     (config)->
       @id = '' + new Date! + Math.random! 
       @name = 'remote-events of ' + config.this-page.name
-      @type = config.type # master | slave-ap | slave-host
+      @type = config.type # master | ap | host , ap和host都是slave
       @this-page = config.this-page
       @target-page = config.target-page # 如果将来会有多个page之间通过post-message通讯，这里改为数组
       @socket = config.socket if config.type is 'master'
