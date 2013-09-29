@@ -4,7 +4,7 @@ io = require 'socket-io-mock'
 eventemitter2 = require '../node_modules/eventemitter2/lib/eventemitter2'
 
 fake-local-storage = {} # 模拟浏览器的local storage
-fake-even-bus = new eventemitter2! # 用于模拟浏览器的storage事件
+fake-even-bus = new eventemitter2 max-listeners: 100 # 用于模拟浏览器的storage事件
 
 create-pair-pages =  (a, b) ->
   page-a = create-mock-web-page a

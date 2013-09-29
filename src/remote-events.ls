@@ -1,6 +1,6 @@
-(require, dispatcher, eventemitter2, web-messaging-adapter, local-storage-messaging-adapter, socket-adapter) <- \
+(require, dispatcher, eventemitter2, web-messaging-adapter, local-storage-messaging-adapter, socket-adapter, master-competer) <- \
 define ['require', 'remote-events-dispatcher', '../node_modules/eventemitter2/lib/eventemitter2'
-  'web-messaging-adapter', 'local-storage-messaging-adapter', 'socket-adapter'
+  'web-messaging-adapter', 'local-storage-messaging-adapter', 'socket-adapter', 'master-competer'
 ]
 
 convert-communications = ->
@@ -15,6 +15,7 @@ convert-communications = ->
 
 exports =
   class Remote-events
+    @compete-master = master-competer.compete-master
     (config)->
       @id = '' + new Date! + Math.random! 
       @name = 'remote-events of ' + config.this-page.name
@@ -22,7 +23,8 @@ exports =
       @this-page = config.this-page
       @target-page = config.target-page # 如果将来会有多个page之间通过post-message通讯，这里改为数组
       @socket = config.socket if config.type is 'master'
-      @bus = new eventemitter2!
+      @bus = new eventemitter2! # max-listeners: 20
+      @heart-beat-timer = null # for master only
       convert-communications.call @
 
     on: !(event, handler)->
@@ -43,4 +45,17 @@ exports =
 
     emit-local-event: !(event, data)->
       @.bus.emit event, data
+
+    heart-beat: !->
+      if @type is 'master'
+        @heart-beat-timer = set-timeout ~> 
+          @this-page.local-storage.set-item config.local-stroage-master-competion-key, new Date! .get-time!
+          @heart-beat!
+        , config.at-plus-master-heart-beat-interval
+
+    die: !->
+      if @type is 'master'
+        @socket.disconnect!
+        clear-timeout @heart-beat-timer
+        # TODO: other clear stuff 
 
